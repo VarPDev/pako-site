@@ -3,3 +3,9 @@ img.personal {
     max-height: 300px;
     max-width: 300px;
 }
+
+html,
+body,
+.block {
+    height: 100%;
+}
