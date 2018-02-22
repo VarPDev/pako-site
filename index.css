@@ -9,3 +9,36 @@ body,
 .block {
     height: 100%;
 }
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+nav {
+    z-index: 100;
+}
+
+p {
+    font-size: 25px;
+    padding: 0 20px;
+}
+
+.container:not(.footer) {
+    background: rgba(255,255,255, 0.9);
+    min-height: 100%;
+}
+
+#blue {
+    background: url(./assets/img/back.png);
+    background-size: cover;
+}
+
+.padding.t100 {
+    padding-top: 100px;
+}
