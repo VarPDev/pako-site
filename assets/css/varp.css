@@ -1299,6 +1299,18 @@ div {
   float: none!important;
 }
 
+.vflex {
+  display: flex;
+}
+
+.vflex div {
+  flex: 1;
+}
+
+.vflex-center {
+  justify-content: center;
+}
+
 /* END HELPERS */
 
 
@@ -1318,10 +1330,11 @@ div {
 
 /* TABLET */
 @media only screen and (min-width: 601px) {
-
 }
 
 /* MOBILE */
 @media only screen and (max-width: 600px) {
-
+  .vflex {
+    display: block;
+  }
 }
