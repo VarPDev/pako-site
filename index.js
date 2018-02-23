@@ -6,3 +6,13 @@ $('.pushpin-demo-nav').each(function() {
         bottom: $target.offset().top + $target.outerHeight() - $this.height()
     });
 });
+
+var options = [
+    {selector: '#blue', offset: 300, callback: function(el) {
+        Materialize.toast("Surprised!? Don't worry be happy!", 3000 );
+    } },
+    {selector: '#green', offset: 500, callback: function(el) {
+        Materialize.toast("Contac me!", 2000 );
+    } }
+  ];
+Materialize.scrollFire(options);
